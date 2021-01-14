@@ -20,6 +20,7 @@ import com.todolist.todolist_ka.model.User;
 import com.todolist.todolist_ka.service.ToDoListService;
 import com.todolist.todolist_ka.service.UserService;
 import com.todolist.todolist_ka.validator.UserValidator;
+
 /**
  * 
  * User Controller - Main controller class of the todolistka application.
@@ -30,6 +31,7 @@ import com.todolist.todolist_ka.validator.UserValidator;
 @Controller
 public class UserController {
 	
+
     @Autowired
     private UserService userService;
 
@@ -177,4 +179,5 @@ public class UserController {
 		
 		return dateTimeFormatter.format(currentDateTime);
 	}
+	
 }
